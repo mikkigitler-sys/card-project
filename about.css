@@ -116,15 +116,32 @@
   outline: 0;
 }
 
-@media (max-width: 980px) {
+
+
+/* Планшеты */
+@media (max-width: 992px) {
   .about-grid,
   .team-grid,
   .stats-row {
-    grid-template-columns: repeat(2, minmax(0, 1fr));
+    grid-template-columns: repeat(2, 1fr);
+  }
+
+  .about-hero {
+    padding: 2rem;
   }
 }
 
-@media (max-width: 760px) {
+/* Телефоны */
+@media (max-width: 768px) {
+  .about-page {
+    padding: 2rem 1rem;
+  }
+
+  .about-hero {
+    padding: 1.5rem;
+    text-align: center;
+  }
+
   .about-grid,
   .team-grid,
   .stats-row {
@@ -134,27 +151,62 @@
   .contact-card {
     flex-direction: column;
     align-items: flex-start;
+    gap: 15px;
   }
 
-  .newsletter-form input {
-    min-width: 100%;
+  .newsletter-form {
+    display: flex;
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  .newsletter-form input,
+  .newsletter-form button {
+    width: 100%;
+  }
+
+  h1 {
+    font-size: 2rem;
+  }
+
+  h2 {
+    font-size: 1.5rem;
   }
 }
 
-@media (min-width: 1400px) {
+/* Очень маленькие телефоны */
+@media (max-width: 576px) {
   .about-page {
-    padding: 2.5rem 0 4rem;
+    padding: 1.5rem 0.8rem;
   }
 
   .about-hero {
-    padding: 2.8rem;
+    padding: 1rem;
+  }
+
+  h1 {
+    font-size: 1.7rem;
+  }
+
+  h2 {
+    font-size: 1.3rem;
+  }
+
+  p {
+    font-size: 0.95rem;
   }
 }
 
-@media (min-width: 1900px) {
+/* Очень большие экраны */
+@media (min-width: 1600px) {
   .about-grid,
   .team-grid,
   .stats-row {
-    grid-template-columns: repeat(4, minmax(0, 1fr));
+    grid-template-columns: repeat(4, 1fr);
+  }
+
+  .about-page {
+    max-width: 1600px;
+    margin: 0 auto;
   }
 }
