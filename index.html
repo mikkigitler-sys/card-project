@@ -1,0 +1,206 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='description' content='Premium gaming marketplace with premium game cards, live filtering, and modern design.' />
+    <title>NovaPlay | Premium Gaming Store</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' />
+    <link rel='stylesheet' href='style.css' />
+  </head>
+  <body>
+    <div class='loader' id='loader'>
+      <div class='loader__ring'></div>
+    </div>
+
+    <header class='site-header'>
+      <a class='brand' href='index.html'>
+        <span class='brand__icon'>◉</span>
+        <span>NovaPlay</span>
+      </a>
+
+      <button class='nav-toggle' id='navToggle' aria-label='Toggle navigation'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class='site-nav' id='siteNav'>
+        <a href='index.html' class='nav-link active'>Home</a>
+        <a href='#games' class='nav-link'>Games</a>
+        <a href='#collections' class='nav-link'>Categories</a>
+        <a href='#deals' class='nav-link'>Deals</a>
+        <a href='about.html' class='nav-link'>About</a>
+      </nav>
+
+      <div class='header-actions'>
+        <label class='search-pill' for='searchInput'>
+          <i class='fa-solid fa-search'></i>
+          <input id='searchInput' type='search' placeholder='Search games...' />
+        </label>
+        <button class='icon-btn' id='themeToggle' aria-label='Toggle theme'>
+          <i class='fa-solid fa-moon'></i>
+        </button>
+        <button class='icon-btn cart-btn' id='cartButton' aria-label='Cart'>
+          <i class='fa-solid fa-shopping-cart'></i>
+          <span class='cart-badge' id='cartCount'>0</span>
+        </button>
+        <a class='login-btn' href='#'>Login</a>
+      </div>
+    </header>
+
+    <main>
+      <section class='hero'>
+        <div class='hero__content reveal'>
+          <p class='eyebrow'>Next-gen gaming marketplace</p>
+          <h1 id='heroTitle'>Discover the most premium titles</h1>
+          <p class='hero__subtitle' id='heroSubtitle'>Explore blockbuster adventures, indie masterpieces, and instant digital downloads in one futuristic storefront.</p>
+          <div class='hero__actions'>
+            <a href='#games' class='btn btn-primary'>Explore Store</a>
+            <a href='about.html' class='btn btn-secondary'>About NovaPlay</a>
+          </div>
+          <div class='hero__stats'>
+            <div>
+              <strong>20+</strong>
+              <span>Curated games</span>
+            </div>
+            <div>
+              <strong>4.9/5</strong>
+              <span>Player rating</span>
+            </div>
+            <div>
+              <strong>24/7</strong>
+              <span>Live updates</span>
+            </div>
+          </div>
+        </div>
+
+        <div class='hero__visual reveal'>
+          <div class='hero__panel'>
+            <img id='heroImage' src='' alt='Featured game' loading='eager' />
+            <div class='hero__panel-content'>
+              <span class='hero__tag' id='heroTag'>Featured Drop</span>
+              <h3 id='heroPanelTitle'>Loading...</h3>
+              <p id='heroPanelText'>Loading...</p>
+            </div>
+          </div>
+          <div class='hero__dots' id='heroDots'></div>
+        </div>
+      </section>
+
+      <section class='feature-strip' id='collections'>
+        <div class='feature-card reveal'>
+          <h3>Featured Games</h3>
+          <p>Premium launches and blockbuster exclusives.</p>
+        </div>
+        <div class='feature-card reveal'>
+          <h3>New Releases</h3>
+          <p>Fresh arrivals with stunning next-gen visuals.</p>
+        </div>
+        <div class='feature-card reveal'>
+          <h3>Best Sellers</h3>
+          <p>Top-rated titles loved by the community.</p>
+        </div>
+        <div class='feature-card reveal'>
+          <h3>Special Discounts</h3>
+          <p>Limited-time deals with major savings.</p>
+        </div>
+      </section>
+
+      <section class='catalog-section' id='games'>
+        <div class='section-heading reveal'>
+          <div>
+            <p class='eyebrow'>Curated library</p>
+            <h2>Premium Games</h2>
+          </div>
+          <div class='filter-row' id='filterRow'></div>
+        </div>
+
+        <div class='games-grid' id='gamesGrid'></div>
+      </section>
+
+      <section class='stats-section reveal'>
+        <div class='stat-card'>
+          <span class='counter' data-target='120000'>0</span>
+          <p>Players online</p>
+        </div>
+        <div class='stat-card'>
+          <span class='counter' data-target='200'>0</span>
+          <p>Exclusive releases</p>
+        </div>
+        <div class='stat-card'>
+          <span class='counter' data-target='98'>0</span>
+          <p>Customer satisfaction</p>
+        </div>
+      </section>
+    </main>
+
+    <footer class='site-footer'>
+      <div class='footer-grid'>
+        <div>
+          <h3>About</h3>
+          <p>NovaPlay delivers premium digital gaming experiences with cinematic design and instant access to the latest titles.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='#games'>Games</a></li>
+            <li><a href='about.html'>About</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href='#'>Help Center</a></li>
+            <li><a href='#'>Refund Policy</a></li>
+            <li><a href='#'>Contact Us</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class='social-links'>
+            <a href='#'><i class='fa-brands fa-discord'></i></a>
+            <a href='#'><i class='fa-brands fa-youtube'></i></a>
+            <a href='#'><i class='fa-brands fa-telegram'></i></a>
+          </div>
+        </div>
+      </div>
+      <p class='footer-copy'>© 2026 NovaPlay. Crafted for the future of gaming.</p>
+    </footer>
+
+    <button class='back-to-top' id='backToTop' aria-label='Back to top'>
+      <i class='fa-solid fa-arrow-up'></i>
+    </button>
+
+    <div class='cart-backdrop' id='cartOverlay'></div>
+    <aside class='cart-panel' id='cartPanel' aria-hidden='true'>
+      <div class='cart-panel__header'>
+        <div>
+          <p class='eyebrow'>Your basket</p>
+          <h3>Shopping Cart</h3>
+        </div>
+        <button class='icon-btn' id='cartClose' aria-label='Close cart'>
+          <i class='fa-solid fa-xmark'></i>
+        </button>
+      </div>
+
+      <div class='cart-items' id='cartItems'></div>
+
+      <div class='cart-footer'>
+        <div class='cart-summary'>
+          <span>Subtotal</span>
+          <strong id='cartSubtotal'>$0.00</strong>
+        </div>
+        <button class='btn btn-primary' id='clearCartBtn'>Clear Cart</button>
+      </div>
+    </aside>
+
+    <div class='toast' id='toast'></div>
+
+    <script src='script.js'></script>
+  </body>
+</html>

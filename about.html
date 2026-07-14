@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang='en'>
+  <head>
+    <meta charset='UTF-8' />
+    <meta name='viewport' content='width=device-width, initial-scale=1.0' />
+    <meta name='description' content='Learn about NovaPlay, our story, values, and the features behind our premium gaming marketplace.' />
+    <title>About NovaPlay</title>
+    <link rel='preconnect' href='https://fonts.googleapis.com' />
+    <link rel='preconnect' href='https://fonts.gstatic.com' crossorigin />
+    <link href='https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap' rel='stylesheet' />
+    <link rel='stylesheet' href='https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css' />
+    <link rel='stylesheet' href='about.css' />
+  </head>
+  <body>
+    <header class='site-header'>
+      <a class='brand' href='index.html'>
+        <span class='brand__icon'>◉</span>
+        <span>NovaPlay</span>
+      </a>
+
+      <button class='nav-toggle' id='navToggle' aria-label='Toggle navigation'>
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+
+      <nav class='site-nav' id='siteNav'>
+        <a href='index.html' class='nav-link'>Home</a>
+        <a href='about.html' class='nav-link active'>About</a>
+      </nav>
+
+      <div class='header-actions'>
+        <button class='icon-btn' id='themeToggle' aria-label='Toggle theme'>
+          <i class='fa-solid fa-moon'></i>
+        </button>
+      </div>
+    </header>
+
+    <main class='about-page'>
+      <section class='about-hero reveal'>
+        <div>
+          <p class='eyebrow'>About our studio</p>
+          <h1>Crafting the future of digital gaming.</h1>
+          <p>NovaPlay blends premium content discovery, cinematic design, and seamless purchasing to create a modern store that feels like a next-generation platform.</p>
+          <a class='btn btn-primary' href='#contact'>Join the Community</a>
+        </div>
+      </section>
+
+      <section class='about-grid'>
+        <article class='glass-card reveal'>
+          <h3>Our Story</h3>
+          <p>Founded by a team of designers, developers, and gaming enthusiasts, NovaPlay was built to create a premium storefront that feels as rich as the games it sells.</p>
+        </article>
+        <article class='glass-card reveal'>
+          <h3>Mission</h3>
+          <p>We aim to elevate how players discover, buy, and experience premium games with a curated, immersive platform.</p>
+        </article>
+        <article class='glass-card reveal'>
+          <h3>Vision</h3>
+          <p>We imagine a future where digital storefronts feel beautiful, fast, and tailored to the player.</p>
+        </article>
+      </section>
+
+      <section class='stats-row reveal'>
+        <div class='stat-card'>
+          <span class='counter' data-target='150'>0</span>
+          <p>Featured Titles</p>
+        </div>
+        <div class='stat-card'>
+          <span class='counter' data-target='99'>0</span>
+          <p>Happy Players</p>
+        </div>
+        <div class='stat-card'>
+          <span class='counter' data-target='24'>0</span>
+          <p>Hours of support</p>
+        </div>
+      </section>
+
+      <section class='team-section'>
+        <div class='section-heading reveal'>
+          <div>
+            <p class='eyebrow'>Meet the team</p>
+            <h2>Built by gaming lovers</h2>
+          </div>
+        </div>
+        <div class='team-grid'>
+          <article class='glass-card reveal'>
+            <h3>Mina Chen</h3>
+            <p>Creative Director</p>
+          </article>
+          <article class='glass-card reveal'>
+            <h3>Rafael Ortiz</h3>
+            <p>Lead Engineer</p>
+          </article>
+          <article class='glass-card reveal'>
+            <h3>Sophia Reed</h3>
+            <p>UX Designer</p>
+          </article>
+        </div>
+      </section>
+
+      <section class='timeline-section reveal'>
+        <h2>Our Journey</h2>
+        <div class='timeline'>
+          <div class='timeline-item'>
+            <h3>2021</h3>
+            <p>NovaPlay concept created around premium storefront design.</p>
+          </div>
+          <div class='timeline-item'>
+            <h3>2023</h3>
+            <p>Launch of the first interactive catalog with curated games and live deals.</p>
+          </div>
+          <div class='timeline-item'>
+            <h3>2026</h3>
+            <p>Expansion into a full-scale AAA-inspired gaming marketplace experience.</p>
+          </div>
+        </div>
+      </section>
+
+      <section class='faq-section reveal'>
+        <div class='section-heading'>
+          <div>
+            <p class='eyebrow'>FAQ</p>
+            <h2>Questions answered</h2>
+          </div>
+        </div>
+        <div class='faq-list'>
+          <details>
+            <summary>Do you support instant downloads?</summary>
+            <p>Yes. Once purchased, your titles are ready to download instantly and securely.</p>
+          </details>
+          <details>
+            <summary>Are there regular sales?</summary>
+            <p>Absolutely. Our storefront updates with new promotions, bundles, and seasonal discounts.</p>
+          </details>
+          <details>
+            <summary>Can I wishlist titles?</summary>
+            <p>Yes, every game card includes a wishlist feature so you can save favorites for later.</p>
+          </details>
+        </div>
+      </section>
+
+      <section class='contact-card reveal' id='contact'>
+        <div>
+          <p class='eyebrow'>Stay in touch</p>
+          <h2>Join the newsletter</h2>
+          <p>Receive launch alerts, weekly deals, and exclusive premium updates.</p>
+        </div>
+        <form class='newsletter-form'>
+          <input type='email' placeholder='Enter your email' />
+          <button class='btn btn-primary' type='submit'>Subscribe</button>
+        </form>
+      </section>
+    </main>
+
+    <footer class='site-footer'>
+      <div class='footer-grid'>
+        <div>
+          <h3>About</h3>
+          <p>NovaPlay is a premium gaming marketplace focused on story-rich, visually striking, and high-quality releases.</p>
+        </div>
+        <div>
+          <h3>Quick Links</h3>
+          <ul>
+            <li><a href='index.html'>Home</a></li>
+            <li><a href='#contact'>Contact</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Support</h3>
+          <ul>
+            <li><a href='#'>Help Center</a></li>
+            <li><a href='#'>Support</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3>Follow</h3>
+          <div class='social-links'>
+            <a href='#'><i class='fa-brands fa-discord'></i></a>
+            <a href='#'><i class='fa-brands fa-youtube'></i></a>
+            <a href='#'><i class='fa-brands fa-telegram'></i></a>
+          </div>
+        </div>
+      </div>
+      <p class='footer-copy'>© 2026 NovaPlay. Built for the next era of gaming.</p>
+    </footer>
+
+    <script src='about.js'></script>
+  </body>
+</html>
